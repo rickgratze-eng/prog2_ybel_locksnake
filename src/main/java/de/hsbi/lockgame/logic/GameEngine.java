@@ -49,6 +49,10 @@ public final class GameEngine {
     }
 
     private void notifyObservers() {
-        observers.forEach(observer -> observer.update(state));
+        observers.forEach(this::notifyObserver);
+    }
+
+    private void notifyObserver(GamePanel observer) {
+        observer.update(state);
     }
 }
