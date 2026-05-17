@@ -4,11 +4,14 @@ import de.hsbi.lockgame.model.Direction;
 import de.hsbi.lockgame.model.Level;
 import de.hsbi.lockgame.model.Snake;
 import de.hsbi.lockgame.ui.GamePanel;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public final class GameEngine {
+
     private GameState state;
-    private GamePanel panel;
+    private final List<GamePanel> observers = new ArrayList<>();
 
     public GameEngine(Level level) {
         this.state =
@@ -25,7 +28,7 @@ public final class GameEngine {
     }
 
     public void setGamePanel(GamePanel panel) {
-        this.panel = panel;
+        observers.add(panel);
     }
 
     public void update(Direction d) {
@@ -37,17 +40,15 @@ public final class GameEngine {
                 state.status(),
                 d);
 
-        notifyObserver();
+        notifyObservers();
     }
 
     public void tick() {
         state = state.tick();
-        notifyObserver();
+        notifyObservers();
     }
 
-    private void notifyObserver() {
-        if (panel != null) {
-            panel.update(state);
-        }
+    private void notifyObservers() {
+        observers.forEach(observer -> observer.update(state));
     }
 }
