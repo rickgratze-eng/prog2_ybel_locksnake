@@ -1,0 +1,185 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1250" viewBox="0 0 1800 1250">
+
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#222"/></marker>
+  <marker id="hollow" markerWidth="12" markerHeight="12" refX="11" refY="6" orient="auto" markerUnits="strokeWidth"><path d="M1,1 L11,6 L1,11 z" fill="#fff" stroke="#222" stroke-width="1.5"/></marker>
+</defs>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;font-size:16px;fill:#111}.title{font-weight:bold;text-anchor:middle}.small{font-size:14px}.stereo{font-size:14px;text-anchor:middle}.label{font-size:14px;fill:#222}
+</style>
+<rect x="0" y="0" width="1800" height="1250" fill="#ffffff"/>
+
+<line x1="280" y1="107.5" x2="380" y2="107.5" stroke="#222" stroke-width="1.5" stroke-dasharray="8,6" marker-end="url(#hollow)"/>
+<line x1="280" y1="120" x2="380" y2="310" stroke="#222" stroke-width="1.5" stroke-dasharray="8,6" marker-end="url(#hollow)"/>
+<line x1="170" y1="160" x2="290" y2="600" stroke="#222" stroke-width="1.5" stroke-dasharray="8,6" marker-end="url(#hollow)"/>
+<line x1="170" y1="160" x2="285" y2="870" stroke="#222" stroke-width="1.5" stroke-dasharray="8,6" marker-end="url(#hollow)"/>
+<line x1="790" y1="323.5" x2="920" y2="287.5" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="540.0" y1="570" x2="480" y2="447" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text class="label" x="510.0" y="500.5">observes / notifies</text>
+<line x1="790" y1="683.0" x2="790" y2="390" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text class="label" x="790.0" y="528.5">sends Direction</text>
+<line x1="790" y1="640" x2="920" y2="430" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="790" y1="690" x2="1390" y2="475" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="500" y1="890" x2="1390" y2="460" stroke="#222" stroke-width="1.5" stroke-dasharray="8,6" marker-end="url(#hollow)"/>
+<line x1="1060" y1="495" x2="800" y2="880" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1130" y1="495" x2="1160" y2="900" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1200" y1="495" x2="1525" y2="890" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1260" y1="495" x2="1265" y2="1130" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1310" y1="495" x2="1585" y2="1130" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="950" y1="960" x2="1370" y2="910" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="800.0" y1="1169" x2="765.0" y2="1130" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="900" y1="1169" x2="1005" y2="1130" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1160" y1="1063" x2="880" y2="1170" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1450" y1="1095" x2="880" y2="1190" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1525" y1="1095" x2="1265" y2="1130" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<line x1="1630" y1="1095" x2="1450" y2="1180" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text class="label" x="1540.0" y="1129.5">Pin.State</text>
+<rect x="60" y="60" width="220" height="95" fill="#F4E7FF" stroke="#111" stroke-width="1.5"/>
+<line x1="60" y1="94" x2="280" y2="94" stroke="#111" stroke-width="1.2"/>
+<line x1="60" y1="122" x2="280" y2="122" stroke="#111" stroke-width="1.2"/>
+<text class="title" x="170.0" y="83">Main</text>
+<text class="small" x="72" y="142">+ main(args : String[]) : void</text>
+<rect x="380" y="60" width="300" height="95" fill="#FFF4D6" stroke="#111" stroke-width="1.5"/>
+<line x1="380" y1="94" x2="680" y2="94" stroke="#111" stroke-width="1.2"/>
+<line x1="380" y1="122" x2="680" y2="122" stroke="#111" stroke-width="1.2"/>
+<text class="title" x="530.0" y="83">LevelLoader</text>
+<text class="small" x="392" y="142">+ load(resource : String) : Level</text>
+<rect x="380" y="200" width="410" height="247" fill="#FFF4D6" stroke="#111" stroke-width="1.5"/>
+<line x1="380" y1="234" x2="790" y2="234" stroke="#111" stroke-width="1.2"/>
+<line x1="380" y1="288" x2="790" y2="288" stroke="#111" stroke-width="1.2"/>
+<text class="title" x="585.0" y="223">GameEngine</text>
+<text class="small" x="392" y="254">- state : GameState</text>
+<text class="small" x="392" y="275">- observers : List&lt;GamePanel&gt;</text>
+<text class="small" x="392" y="308">+ GameEngine(level : Level)</text>
+<text class="small" x="392" y="329">+ state() : GameState</text>
+<text class="small" x="392" y="350">+ setGamePanel(panel : GamePanel) : void</text>
+<text class="small" x="392" y="371">+ update(d : Direction) : void</text>
+<text class="small" x="392" y="392">+ tick() : void</text>
+<text class="small" x="392" y="413">- notifyObservers() : void</text>
+<text class="small" x="392" y="434">- notifyObserver(observer : GamePanel) : void</text>
+<rect x="290" y="570" width="500" height="226" fill="#FFF4D6" stroke="#111" stroke-width="1.5"/>
+<line x1="290" y1="604" x2="790" y2="604" stroke="#111" stroke-width="1.2"/>
+<line x1="290" y1="679" x2="790" y2="679" stroke="#111" stroke-width="1.2"/>
+<text class="title" x="540.0" y="593">GamePanel</text>
+<text class="small" x="302" y="624">- state : GameState</text>
+<text class="small" x="302" y="645">- renderer : GameRenderer</text>
+<text class="small" x="302" y="666">- gameEngine : GameEngine</text>
+<text class="small" x="302" y="699">+ GamePanel(initialState : GameState, renderer : GameRenderer)</text>
+<text class="small" x="302" y="720">+ update(newState : GameState) : void</text>
+<text class="small" x="302" y="741">+ setGameEngine(engine : GameEngine) : void</text>
+<text class="small" x="302" y="762">- setupKeyBindings(direction : Direction, keyCodes : Iterable&lt;Int...</text>
+<text class="small" x="302" y="783">+ paintComponent(g : Graphics) : void</text>
+<rect x="920" y="80" width="420" height="415" fill="#E7F6E7" stroke="#111" stroke-width="1.5"/>
+<line x1="920" y1="114" x2="1340" y2="114" stroke="#111" stroke-width="1.2"/>
+<line x1="920" y1="231" x2="1340" y2="231" stroke="#111" stroke-width="1.2"/>
+<text class="title" x="1130.0" y="103">GameState</text>
+<text class="small" x="932" y="134">- level : Level</text>
+<text class="small" x="932" y="155">- snake : Snake</text>
+<text class="small" x="932" y="176">- pins : List&lt;Pin&gt;</text>
+<text class="small" x="932" y="197">- status : Status</text>
+<text class="small" x="932" y="218">- pendingDirection : Direction</text>
+<text class="small" x="932" y="251">+ GameState(level, snake, pins, status, pendingDirection)</text>
+<text class="small" x="932" y="272">+ level() : Level</text>
+<text class="small" x="932" y="293">+ snake() : Snake</text>
+<text class="small" x="932" y="314">+ pins() : List&lt;Pin&gt;</text>
+<text class="small" x="932" y="335">+ status() : Status</text>
+<text class="small" x="932" y="356">+ pendingDirection() : Direction</text>
+<text class="small" x="932" y="377">+ tick() : GameState</text>
+<text class="small" x="932" y="398">- snakeOccupies(position : Position) : boolean</text>
+<text class="small" x="932" y="419">- pinAt(position : Position) : Pin</text>
+<text class="small" x="932" y="440">- activatePin(pin : Pin) : List&lt;Pin&gt;</text>
+<text class="small" x="932" y="461">- allPinsSet(pins : List&lt;Pin&gt;) : boolean</text>
+<text class="small" x="932" y="482">- samePosition(a : Position, b : Position) : boolean</text>
+<rect x="1390" y="400" width="340" height="95" fill="#E7F0FF" stroke="#111" stroke-width="1.5"/>
+<line x1="1390" y1="434" x2="1730" y2="434" stroke="#111" stroke-width="1.2"/>
+<line x1="1390" y1="462" x2="1730" y2="462" stroke="#111" stroke-width="1.2"/>
+<text class="stereo" x="1560.0" y="414">«interface»</text>
+<text class="title" x="1560.0" y="430">GameRenderer</text>
+<text class="small" x="1402" y="482">+ render(g : Graphics2D, state : GameState, tileSize : int) : void</text>
+<rect x="70" y="870" width="430" height="95" fill="#FFF4D6" stroke="#111" stroke-width="1.5"/>
+<line x1="70" y1="904" x2="500" y2="904" stroke="#111" stroke-width="1.2"/>
+<line x1="70" y1="932" x2="500" y2="932" stroke="#111" stroke-width="1.2"/>
+<text class="title" x="285.0" y="893">Java2DRenderer</text>
+<text class="small" x="82" y="952">+ render(g : Graphics2D, state : GameState, tileSize : int) : void</text>
+<rect x="650" y="880" width="300" height="289" fill="#E7F6E7" stroke="#111" stroke-width="1.5"/>
+<line x1="650" y1="914" x2="950" y2="914" stroke="#111" stroke-width="1.2"/>
+<line x1="650" y1="1031" x2="950" y2="1031" stroke="#111" stroke-width="1.2"/>
+<text class="title" x="800.0" y="903">Level</text>
+<text class="small" x="662" y="934">- width : int</text>
+<text class="small" x="662" y="955">- height : int</text>
+<text class="small" x="662" y="976">- cells : CellType[][]</text>
+<text class="small" x="662" y="997">- pins : List&lt;Pin&gt;</text>
+<text class="small" x="662" y="1018">- snakeStart : Position</text>
+<text class="small" x="662" y="1051">+ width() : int</text>
+<text class="small" x="662" y="1072">+ height() : int</text>
+<text class="small" x="662" y="1093">+ pins() : List&lt;Pin&gt;</text>
+<text class="small" x="662" y="1114">+ snakeStart() : Position</text>
+<text class="small" x="662" y="1135">+ isInside(position : Position) : boolean</text>
+<text class="small" x="662" y="1156">+ cellAt(position : Position) : CellType</text>
+<rect x="1010" y="900" width="300" height="163" fill="#E7F6E7" stroke="#111" stroke-width="1.5"/>
+<line x1="1010" y1="934" x2="1310" y2="934" stroke="#111" stroke-width="1.2"/>
+<line x1="1010" y1="967" x2="1310" y2="967" stroke="#111" stroke-width="1.2"/>
+<text class="title" x="1160.0" y="923">Snake</text>
+<text class="small" x="1022" y="954">- body : List&lt;Position&gt;</text>
+<text class="small" x="1022" y="987">+ body() : List&lt;Position&gt;</text>
+<text class="small" x="1022" y="1008">+ head() : Position</text>
+<text class="small" x="1022" y="1029">+ nextHead(direction : Direction) : Position</text>
+<text class="small" x="1022" y="1050">+ grow(direction : Direction) : Snake</text>
+<rect x="1370" y="890" width="310" height="205" fill="#E7F6E7" stroke="#111" stroke-width="1.5"/>
+<line x1="1370" y1="924" x2="1680" y2="924" stroke="#111" stroke-width="1.2"/>
+<line x1="1370" y1="999" x2="1680" y2="999" stroke="#111" stroke-width="1.2"/>
+<text class="title" x="1525.0" y="913">Pin</text>
+<text class="small" x="1382" y="944">- position : Position</text>
+<text class="small" x="1382" y="965">- state : State</text>
+<text class="small" x="1382" y="986">- activationDirection : Direction</text>
+<text class="small" x="1382" y="1019">+ position() : Position</text>
+<text class="small" x="1382" y="1040">+ state() : State</text>
+<text class="small" x="1382" y="1061">+ activationDirection() : Direction</text>
+<text class="small" x="1382" y="1082">+ withState(state : State) : Pin</text>
+<rect x="650" y="1130" width="230" height="142" fill="#E7F6E7" stroke="#111" stroke-width="1.5"/>
+<line x1="650" y1="1164" x2="880" y2="1164" stroke="#111" stroke-width="1.2"/>
+<line x1="650" y1="1218" x2="880" y2="1218" stroke="#111" stroke-width="1.2"/>
+<text class="title" x="765.0" y="1153">Position</text>
+<text class="small" x="662" y="1184">- x : int</text>
+<text class="small" x="662" y="1205">- y : int</text>
+<text class="small" x="662" y="1238">+ x() : int</text>
+<text class="small" x="662" y="1259">+ y() : int</text>
+<rect x="920" y="1130" width="170" height="116" fill="#E7F6E7" stroke="#111" stroke-width="1.5"/>
+<line x1="920" y1="1164" x2="1090" y2="1164" stroke="#111" stroke-width="1.2"/>
+<line x1="920" y1="1218" x2="1090" y2="1218" stroke="#111" stroke-width="1.2"/>
+<text class="stereo" x="1005.0" y="1144">«enum»</text>
+<text class="title" x="1005.0" y="1160">CellType</text>
+<text class="small" x="932" y="1184">EMPTY</text>
+<text class="small" x="932" y="1205">WALL</text>
+<rect x="1180" y="1130" width="170" height="179" fill="#E7F6E7" stroke="#111" stroke-width="1.5"/>
+<line x1="1180" y1="1164" x2="1350" y2="1164" stroke="#111" stroke-width="1.2"/>
+<line x1="1180" y1="1281" x2="1350" y2="1281" stroke="#111" stroke-width="1.2"/>
+<text class="stereo" x="1265.0" y="1144">«enum»</text>
+<text class="title" x="1265.0" y="1160">Direction</text>
+<text class="small" x="1192" y="1184">UP</text>
+<text class="small" x="1192" y="1205">DOWN</text>
+<text class="small" x="1192" y="1226">LEFT</text>
+<text class="small" x="1192" y="1247">RIGHT</text>
+<text class="small" x="1192" y="1268">NONE</text>
+<rect x="1450" y="1130" width="270" height="163" fill="#E7F6E7" stroke="#111" stroke-width="1.5"/>
+<line x1="1450" y1="1164" x2="1720" y2="1164" stroke="#111" stroke-width="1.2"/>
+<line x1="1450" y1="1260" x2="1720" y2="1260" stroke="#111" stroke-width="1.2"/>
+<text class="stereo" x="1585.0" y="1144">«enum»</text>
+<text class="title" x="1585.0" y="1160">Status</text>
+<text class="small" x="1462" y="1184">RUNNING</text>
+<text class="small" x="1462" y="1205">WON</text>
+<text class="small" x="1462" y="1226">LOST_SELF_COLLISION</text>
+<text class="small" x="1462" y="1247">LOST_OUT_OF_BOUNDS</text>
+<text class="small" x="1462" y="1280">+ isRunning() : boolean</text>
+
+<rect x="60" y="1030" width="500" height="190" rx="12" fill="#fafafa" stroke="#555" stroke-width="1.5"/>
+<text class="title" x="125" y="1065">Legende</text>
+<line x1="85" y1="1095" x2="175" y2="1095" stroke="#222" stroke-width="1.5" stroke-dasharray="8,6" marker-end="url(#hollow)"/>
+<text class="label" x="200" y="1100">Abhängigkeit / Dependency</text>
+<line x1="85" y1="1130" x2="175" y2="1130" stroke="#222" stroke-width="1.5" marker-end="url(#arrow)"/>
+<text class="label" x="200" y="1135">Assoziation / benutzt</text>
+<line x1="85" y1="1165" x2="175" y2="1165" stroke="#222" stroke-width="1.5" stroke-dasharray="8,6" marker-end="url(#hollow)"/>
+<text class="label" x="200" y="1170">Realisierung eines Interface</text>
+<text class="label" x="85" y="1200">Observer: GameEngine benachrichtigt GamePanel per update(GameState).</text>
+
+</svg>
